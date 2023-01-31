@@ -1,0 +1,141 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* a{
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+* ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body{
+  width: 100%;
+  font-family: sans-serif;
+  background-color: #F0F2F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 5em;
+}
+.box-1{
+  width: 100%;
+  max-width: 30rem;
+}
+.title{
+  color: #1877F2;
+  font-size: 3rem;
+  margin-bottom: 0.2rem;
+}
+.content{
+  font-size: 1.5rem;
+}
+.box-2{
+  width: 100%;
+  max-width: 22rem;
+}
+.form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  padding: 0.8rem;
+  background-color: #fff;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+}
+.form input{
+  width: 100%;
+  padding: 0.3em;
+  font-size: 1.4rem;
+  border: 1px black solid;
+  border-radius: 0.2em;
+}
+
+.form input::placeholder{
+  font-size: 1rem;
+}
+.form .login{
+   width: 100%;
+  padding: 0.3em;
+  font-size: 1.4rem;
+  border: 1px black solid;
+  border-radius: 0.2em;
+  background-color: #1877F2;
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.form .login:hover{
+  background-color: #036cf5;
+}
+.form a{
+  color: #1877F2;
+}
+.form a:hover{
+  text-decoration: underline;
+}
+.form .underline{
+  width: 100%;
+  border: 0.4px black solid;
+  background-color: black;
+  opacity: 0.5;
+}
+.form .create{
+  background-color: #42B72A;
+  color: #fff;
+  outline: none;
+  border: none;
+   padding: 0.5em;
+  font-size: 1.1rem;
+  border-radius: 0.2em;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.form .create:hover{
+  background-color: #296c1b;
+}
+
+.page{
+  text-align: center;
+  font-size: 0.8rem;
+}
+.page a{
+  display: inline;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.page a:hover{
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 650px) {
+  body{
+    flex-direction: column;
+    gap: 0;
+  }
+  .box-1{
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.content{
+  font-size: 1.3rem;
+}
+}
